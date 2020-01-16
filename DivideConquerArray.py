@@ -22,4 +22,4 @@ def peakFinder(array, low, high):
         return array[mid]
 
 print(peakFinder([6, 7, 4, 3, 2, 1, 4], 0, 7))
-    
+   
