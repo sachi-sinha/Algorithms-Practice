@@ -23,28 +23,10 @@ class SingleLL:
     def isEmpty(self):
         return (self.head == None)
 
-    def getCurr(self):
-        if (self.curr == None):
-            return None
-        self.curr.getElement()
-
     def goToHead(self):
         if (self.isEmpty()):
             return False
         self.curr = self.head
-        return True
-
-    def goToTail(self):
-        if (isEmpty()):
-            return False
-        self.curr = self.tail
-        return True
-
-    def goToNext(self):
-        if self.curr == None or self.curr.getNext() == None:
-            return False
-
-        self.curr = self.curr.getNext()
         return True
 
     def insertNext(self, nextNode):
@@ -60,17 +42,6 @@ class SingleLL:
             self.tail = newNode
 
         self.curr = newNode
-
-    def deleteNext(self):
-        if self.curr == None or self.curr.getNext() == None:
-            return None
-
-        self.curr.setNext(curr.getNext().getNext())
-
-        if self.curr.getNext() == None:
-            self.tail = self.curr
-
-        self.size -= 1
 
     def insertHead(self, element):
         oldHead = self.head
